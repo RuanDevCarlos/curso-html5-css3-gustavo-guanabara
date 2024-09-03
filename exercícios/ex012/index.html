@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    
+    <!-- MANEIRA MAIS SIMPLES DE ADICIONAR UM VÍDEO 
+    <video src="media/Meu-Video (2).mp4" width="500" controls></video> 
+    -->
+    
+    <video controls poster="pexels-sebastian-voortman-189349.jpg" width="500" autoplay>
+        <source src="media/Meu-Video(1).mkv" type="video/mp4">
+        <source src="media/Meu-Video (2).mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    
+    <!-- Ele vai testar linha por linha para ver se o navegador é compatível, por isso é bom colocar todos os formatos de vídeo possível, só não coloquei mais porque estava com preguisa.  -->
+
+    <!-- Se o cliente pedir para que o vídeo seja hospedado no site dele, deve-se explicar que isso pode e vai gerar um grande consumo de banda para o site dele. -->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D6wWCFi7qq0?si=lXNqx0OY92_pJak6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Uma outra alternativa na hora de hospedar um vídeo é o vímeo, ele é tipo o YouTube porém, você pode decidir que vai ou não asssitir (ex: somente assinantes), outra vantagem do vimeo é que a qualidade de vídeo nele é melhor, mas ele trava mais que o YouTube -->
+
+    <h1>Inserindo vídeos do Vímeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/172113720?h=fbb7085389" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/172113720">2016 Reel</a> from <a href="https://vimeo.com/heybenhey">Ben Hill</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+</body>
+</html>

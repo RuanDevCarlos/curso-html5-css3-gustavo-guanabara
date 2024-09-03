@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /* Ao escolher uma fonte deve-se prestar atenção se a mesma possui glifos com acentuação */
+
+        /* 
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advenced typografy)
+        - svg
+        */
+        @font-face {
+            font-family: "cloister";
+            src: url(fonts/CloisterBlack.ttf) format("truetype"); 
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "monofonto";
+            src: url(fonts/monofonto\ rg.otf) format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: "monofonto", Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-family: "cloister", 'Times New Roman', Times, serif;
+            font-size: 3em;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores ea voluptatum cum, voluptatibus, corporis magnam est, ut beatae iste enim reprehenderit explicabo quas recusandae facilis nobis ipsam nisi ratione.</p>
+</body>
+</html>

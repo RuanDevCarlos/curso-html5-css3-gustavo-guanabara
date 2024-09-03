@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /* É recomendado colocar uma conbinação segura de fontes para o caso do dispositivo não possuir uma das fontes escolhidas.
+
+        Sempre termine sua combinação segura com uma fonte genérica como serif, sans-serif e monospace.
+
+        Ao colocar "serif" o dispositivo vai escolher qualquer fonte com serifa, "sans-serif" vai colocar qualquer fonte sem serifa e "monospace" vai escolher qualquer fonte monoespaçada.
+
+        Medidas Absolutas:
+        cm (centímetro), mm (milímetro), in (polegada), px (pixel), pt (ponte), pc (paica)
+
+        Medidas Relativas: 
+        em (altura M, altura do M maiúsculo), ex (altura X, alturas das minúsculas), rem (altura M raltiva a fonte configurada no body), vw (largura da viewport. Tela), vh (altura da viewport. Tela), % (porcertagem)
+
+        16px = 1em = tamanho padrão
+
+        PS: Para medidas de font-size é recomendado apenas em ou px
+
+        Não confundir weight (peso), width (largura), height (altura)
+        */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: ;
+            /* lighter, normal, bold, bolder */
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /* shorthand font
+            font-style -> font-weight -> font-size -> font-family
+            */
+
+            font: italic bolder 2em sans-serif;
+        }
+
+   
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta reprehenderit officiis veniam dignissimos voluptate. Minima, quos consectetur iusto repudiandae necessitatibus excepturi quia optio aliquid, sit velit quis id itaque? Sint?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum voluptates quod atque nobis ipsam tempore sint, eveniet dolores quidem sed harum, adipisci, facere culpa. Ex deserunt alias earum temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, eum! Similique atque ab est voluptas. Nesciunt ipsa obcaecati neque animi exercitationem laboriosam, iure explicabo aliquid porro quo eos, est facere!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, iure quas omnis iusto incidunt velit fugiat officia sed numquam vel consectetur placeat eum sunt aliquid debitis dignissimos necessitatibus voluptates inventore.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore explicabo blanditiis hic repellendus suscipit sapiente voluptas aperiam aliquam, voluptatem optio repudiandae, magnam corporis id veniam dolor laborum, quaerat magni esse.</p>
+</body>
+</html>
